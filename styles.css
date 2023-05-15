@@ -2,7 +2,15 @@
     font-family: montserrat;
     padding: 0px;
     margin: 0px;
-  }
+    }
+
+.bg-image {
+    position: relative;
+    background-image: url('./img/17973908.jpg');
+    background-size: cover;      /* Resize the background image to cover the entire container */
+    background-position: center; /* Center the background image */
+    }
+
 
   /* Navbar Styles */
 
@@ -19,16 +27,16 @@
     letter-spacing: 2px;
     }
     .navbar-dark .navbar-brand span {
-    color: crimson
+    color: #002537;
     }
     .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link:active {
-    color: crimson;
+    color: #002537;
     }
 
 @keyframes colorCycle {
     0% {color: black;}
-    25% {color: #002537;}
-    50% {color: #005c89;}
+    12.5% {color: #002537;}
+    40% {color: #005c89;}
     75% {color: #0082c2}
     100% {color: #00abff;}
     100% {color: #0082c2}
