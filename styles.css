@@ -1,0 +1,31 @@
+* {
+    font-family: montserrat;
+    padding: 0px;
+    margin: 0px;
+  }
+
+@keyframes colorCycle {
+    0% {color: black;}
+    25% {color: #002537;}
+    50% {color: #005c89;}
+    75% {color: #0082c2}
+    100% {color: #00abff;}
+    100% {color: #0082c2}
+    100% {color: #005c89}
+    100% {color: #002537}
+    100% {color: black}
+}
+
+.word {
+    animation-name: colorCycle;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+#word2 {
+    animation-delay: 4s;
+}
+
+#word3 {
+    animation-delay: 8s;
+}
