@@ -56,9 +56,11 @@
     
     
 
+/* Text Gradient Rotation */
+
 @keyframes colorCycle {
     0% {color: black;}
-    12.5% {color: #002537;}
+    20% {color: #002537;}
     40% {color: #005c89;}
     75% {color: #0082c2}
     100% {color: #00abff;}
@@ -70,14 +72,14 @@
 
 .word {
     animation-name: colorCycle;
-    animation-duration: 12s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
 }
 
 #word2 {
-    animation-delay: 4s;
+    animation-delay: 2.5s;
 }
 
 #word3 {
-    animation-delay: 8s;
+    animation-delay: 5s;
 }
