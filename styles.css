@@ -27,10 +27,10 @@
     letter-spacing: 2px;
     }
     .navbar-dark .navbar-brand span {
-    color: #002537;
+    color: #005c89;
     }
     .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-nav .nav-link:active {
-    color: #002537;
+    color: #005c89;
     }
 
 @keyframes colorCycle {
