@@ -79,6 +79,53 @@
     .my-btn:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
+
+    /* Carousel Styles */
+    .carousel-accordion {
+        display: flex;
+        height: 65vh;
+        background-size: cover; /* or contain, or 100%, or auto, or a specific size */
+        background-position: center;
+        transition: width 0.5s ease-in-out, background-image 0.5s ease-in-out;
+    }
+    .carousel-accordion .item {
+        width: 33.33%;
+        height: 65vh;
+        background-size: cover;
+        transition: width 0.5s ease-in-out, background-image 0.5s ease-in-out;
+        position: relative;
+        border-right: 1px solid white; /* adjust as needed */
+    }
+    .carousel-accordion .item:last-child {
+        border-right: none;
+    }
+    .carousel-accordion .item:hover {
+        width: 50%;
+    }
+    .carousel-accordion .item .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* lighter grey film */
+    }
+    .carousel-accordion .item:hover .overlay {
+        background-color: rgba(0, 0, 0, 0.7); /* darker grey film */
+    }
+    .carousel-accordion .item .content {
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        color: white; /* ensures text stays white */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+    }
+
+
+    
     
 
 /* Text Gradient Rotation */
