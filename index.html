@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 
     <!-- CSS -->
@@ -21,58 +23,58 @@
     <nav id="navbar" class="navbar navbar-expand-lg bg-light navbar-light py-3 fixed-top">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
-                <img src="./img/tdlogo-small.png" class="d-lg-none" alt="Logo" id="logo-sm">
+                <img src="./img/tdlogo-small.png" class="d-lg-none" height="35" width="55" alt="Logo" id="logo-sm">
                 <img src="./img/logo-mod.png" class="d-none d-lg-inline" height="45" width="170" alt="Logo" id="logo"></img>
             </a>
     
             <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navmenu"
-                aria-controls="navmenu"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+            aria-controls="navmenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        >
+            <svg width="30" height="30" viewBox="0 0 30 30">
+                <path class="line line1" d="M 4,7 26,7" stroke="black" stroke-width="2" />
+                <path class="line line2" d="M 4,15 26,15" stroke="black" stroke-width="2" />
+                <path class="lineg line3" d="M 4,23 26,23" stroke="black" stroke-width="2" />
+            </svg>
+        </button>
+        
     
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
                         <a href="index.html" class="nav-link fw-bold active" aria-current="page">
                             <span class="nav-link-text">Home</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
                         <a href="about.html" class="nav-link">
                             <span class="nav-link-text">About Us</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
                         <a href="services.html" class="nav-link">
                             <span class="nav-link-text">Services</span>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-center">
                         <a href="contact.html" class="nav-link">
                             <span class="nav-link-text">Contact</span>
                         </a>
                     </li>
-                    <li class="nav-item d-lg-none">
-                        <img src="./img/number.png" width="150" />
-                    </li>
-                    <li class="nav-item d-lg-none">
-                        <a href="other-page.html" class="btn btn-primary animate">Get a Quote</a>
+                    <li class="nav-item d-lg-none text-center">
+                        <a href="other-page.html" class="btn btn-primary animate border-top">Get a Quote</a>
                     </li>
                 </ul>
             </div>
-            <div class="d-none d-lg-block" style="padding-right: 40px;">
-                <a href="other-page.html" class="btn btn-primary animate">Get a Quote</a>
-            </div>
-            <div class="vr"></div>
+            <div class="vr d-none d-lg-block"></div>
             <div class="d-none d-lg-block" style="padding-left: 40px;">
-                <img src="./img/number.png" width="150" />
+                <a href="other-page.html" class="btn btn-primary animate">Get a Quote</a>
             </div>
         </div>
     </nav>
