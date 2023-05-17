@@ -16,6 +16,9 @@
     <!-- CSS -->
     <title>Your Web Design Service</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preload" href="./img/slide1.jpg" as="image">
+    <link rel="preload" href="./img/slide2.jpg" as="image">
+    <link rel="preload" href="./img/slide3.jpg" as="image">
 </head>
 <body>
 
@@ -101,32 +104,34 @@
     </section>
 
     <!-- Summary Section -->
-            <div class="carousel-accordion" style="background-image: url('./img/slide4.jpg')">
-                <section class="item" data-hover-image="./img/slide4.jpg">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <h2>Web Design</h2>
-                        <p>Paragraph 1</p>
-                        <button>Learn More</button>
-                    </div>
-                </section>
-                <section class="item" data-hover-image="./img/slide2.jpg">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <h2>Web Development</h2>
-                        <p>Paragraph 1</p>
-                        <button>Learn More</button>
-                    </div>
-                </section>
-                <section class="item" data-hover-image="./img/slide3.jpg">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <h2>Digital Marketing</h2>
-                        <p>Paragraph 1</p>
-                        <button>Learn More</button>
-                    </div>
-                </section>
-            </div>            
+    <div class="carousel-accordion d-none d-lg-flex" style="background-image: url('./img/slide4.jpg')">
+        <section class="item" data-hover-image="./img/slide4.jpg">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="display-4">Web Design</h2>
+                <p class="lead px-5">Boost your online presence with our web design service, where creativity and functionality seamlessly combine, empowering your brand to captivate and engage your audience effortlessly.</p>
+                <button class="custom-btn btn-3"><span>Learn More</span></button>
+            </div>
+        </section>
+        <section class="item" data-hover-image="./img/slide2.jpg">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="display-4">Web Development</h2>
+                <p class="lead px-5">Drawing upon our expertise in streamlined processes, utilization of advanced technologies, and adherence to industry best practices, we are dedicated to deliver tailored solutions for all of your needs.</p>
+                <button class="custom-btn btn-3"><span>Learn More</span></button>
+            </div>
+        </section>
+        <section class="item" data-hover-image="./img/slide3.jpg">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2 class="display-4">Digital Marketing</h2>
+                <p class="lead px-5">Enhance online visibility with our digital marketing service. We utilize SEO techniques to optimize your website, boost search rankings, and attract visitors.</p>
+                <button class="custom-btn btn-3"><span>Learn More</span></button>
+            </div>
+        </section>
+    </div>            
+
+
 
     <!-- Footer -->
     <footer class="text-center py-3 bg-dark text-white">
