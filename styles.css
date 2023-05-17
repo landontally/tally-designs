@@ -193,6 +193,7 @@
         transition:800ms ease all;
         }
 
+
 /* Carousel Styles */
     .carousel-accordion {
         display: flex;
@@ -237,9 +238,157 @@
         align-items: center;
         gap: 1em;
     }
-    .carousel-accordion .item .content .p {
 
-    }
+    .about-us {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to bottom right, lightblue, #002537);
+      }
+      
+      .about-us-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%; /* adjust as needed */
+        color: white; /* ensures text stays white */
+      }
+      
+      .about-us-title, .about-us-text {
+        width: 45%; /* adjust as needed */
+      }
+      
+      .about-us-title h2 {
+        margin-bottom: 1em;
+      }
+
+
+      /* ------------------------------------ */
+/* Only target elements within the unique button container */
+#unique-button-container {
+    /* This is the equivalent of the "body" styles in the original SCSS */
+    font-family: 'Mukta', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f3f8fa;
+  }
+  
+  #unique-button-container button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+/* ----------------------------------------------------------- */
+body * {
+    box-sizing: border-box;
+  }
+  
+  body *::before, body *::after {
+    box-sizing: border-box;
+  }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  button.learn-more {
+    width: 12rem;
+  }
+  
+  button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+  }
+  
+  button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: transparent;
+  }
+  
+  button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+  }
+  
+  button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65,0,.076,1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  button.learn-more:hover .circle {
+    width: 100%;
+  }
+  
+  button.learn-more:hover .circle .icon.arrow {
+    background: transparent;
+    transform: translate(1rem, 0);
+  }
+  
+  button.learn-more:hover .button-text {
+    color: #fff;
+  }
+  
+/* ----------------------------------------------------------- */
+      
 
 /* Text Gradient Rotation */
 
@@ -268,3 +417,47 @@
 #word3 {
     animation-delay: 5s;
 }
+
+@media (max-width: 768px) {
+    .about-us-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: space-around; 
+    }
+  
+    .about-us-title {
+      order: 1; /* This moves the title to the top */
+      width: 90%; 
+    }
+  
+    .about-us-text {
+      order: 2; /* This moves the text to the middle */
+      width: 90%; 
+    }
+  
+    #container {
+      order: 3; /* This moves the button to the bottom */
+      margin-top: 20px; 
+    }
+  
+    .lead {
+      font-size: 14px; 
+    }
+  
+    .learn-more .circle {
+      width: 100%;
+    }
+  
+    .learn-more .icon.arrow {
+      transform: translate(1rem, 0);
+      background: white;
+    }
+  
+    .learn-more .button-text {
+      color: white;
+    }
+  }
+  
+  
+  
